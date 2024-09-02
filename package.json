@@ -1,0 +1,21 @@
+{
+  "name": "agri_secure_sih",
+  "version": "1.0.0",
+  "description": "Backend Solution for Agri-Secure which is a contract forming platforms between farmer and buyers ,making money and sales easy for farmers.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "author": "Avinendra Kumar Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0"
+  }
+}
