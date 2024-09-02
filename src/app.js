@@ -9,12 +9,13 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
 
-
 //routes import
-//ex: import .......anyRouter from './routes/..........'
+//ex: 
+import checkRouter from './routes/check.routes.js'
 
 
 //routes declaration
-//ex: app.use("/api/any", anyRouter)
+//ex: 
+app.use("/api/check", checkRouter)
 
 export { app }
