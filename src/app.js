@@ -10,12 +10,9 @@ app.use(express.static("public"))
 app.use(cookieParser())
 
 //routes import
-//ex: 
-import checkRouter from './routes/check.routes.js'
-
+import farmerRouter from './routes/farmer.route.js'
 
 //routes declaration
-//ex: 
-app.use("/api/check", checkRouter)
+app.use("/api/farmer/",farmerRouter)
 
 export { app }
