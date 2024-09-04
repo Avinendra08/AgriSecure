@@ -20,3 +20,7 @@ export const getCropTypes = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "cropTypes found", cropTypes });
 });
 
+export const postFarmerBid = asyncHandler(async (req, res) => {
+    //const farmer_id = req.user._id; 
+    //authentication chahiye hoga..have to do it later
+  });
