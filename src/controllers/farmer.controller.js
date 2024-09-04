@@ -1,10 +1,10 @@
 import { Farmer } from "../models/farmer.model.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
-export const check = asyncHandler(async (req, res) => {
-  console.log("hello");
-  res.status(200).json({ message: "hello" });
-});
+// export const check = asyncHandler(async (req, res) => {
+//   console.log("hello");
+//   res.status(200).json({ message: "hello" });
+// });
 
 export const signUpFarmer = asyncHandler(async (req, res) => {
   const { first_name, last_name, mobile_number } = req.body;

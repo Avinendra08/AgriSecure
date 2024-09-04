@@ -1,9 +1,9 @@
 import {Router} from "express";
-import { check, onboardFarmer, signUpFarmer } from "../controllers/farmer.controller.js";
+import {onboardFarmer, signUpFarmer } from "../controllers/farmer.controller.js";
 
 const router = Router();
 
-router.get("/check",check);
+//router.get("/check",check);
 router.post("/signUp",signUpFarmer);
 router.post("/onboardFarmer/:farmer_id",onboardFarmer);
 

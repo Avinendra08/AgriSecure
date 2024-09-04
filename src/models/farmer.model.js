@@ -14,7 +14,7 @@ const landSchema = new Schema({
     required: true,
   },
   crop_types: {
-    type: String, //enum bhi rakh sakte yahan
+    type: [String], //enum bhi rakh sakte yahan
     required: true,
   },
   production_quantity: {
