@@ -9,7 +9,7 @@ import {
 
 const router = express.Router();
 
-//routes
+//routes of crud operations
 
 router.post('/', createFarmerBid);
 router.get('/', getFarmerBids); //if kuch extra chahiya toh add
