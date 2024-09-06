@@ -26,11 +26,11 @@ export const postFarmerBid = asyncHandler(async (req, res) => {
   });
 
   
-//Create the operation
+//Create the operation(id)
 
   export const createFarmerBid = asyncHandler(async (req, res) => {
     try {
-      const farmerBid = new FarmerBid(req.body);
+      const farmerBid = new FarmerBid(req.body); 
       const savedBid = await farmerBid.save();
       res.status(201).json(savedBid);
     } catch (error) {

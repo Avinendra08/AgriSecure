@@ -9,6 +9,8 @@ import {
 
 const router = express.Router();
 
+//routes
+
 router.post('/', createFarmerBid);
 router.get('/', getFarmerBids); //if kuch extra chahiya toh add
 router.get('/:farmer_id', getFarmerBidById); //read with id krna hai toh
