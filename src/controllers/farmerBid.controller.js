@@ -26,7 +26,7 @@ export const postFarmerBid = asyncHandler(async (req, res) => {
   });
 
   
-//Create operation
+//Create the operation
 
   export const createFarmerBid = asyncHandler(async (req, res) => {
     try {

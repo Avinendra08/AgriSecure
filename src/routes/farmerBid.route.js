@@ -10,7 +10,7 @@ import {
 const router = express.Router();
 
 router.post('/', createFarmerBid);
-router.get('/', getFarmerBids); //if kuch extra chahiya toh
+router.get('/', getFarmerBids); //if kuch extra chahiya toh add
 router.get('/:farmer_id', getFarmerBidById); //read with id krna hai toh
 router.put('/:farmer_id', updateFarmerBid);
 router.delete('/:farmer_id', deleteFarmerBid);
