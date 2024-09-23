@@ -3,10 +3,10 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import otpGenerator from 'otp-generator';
 import twilio from 'twilio';
 
-export const check = asyncHandler(async (req, res) => {
-  console.log("hello");
-  res.status(200).json({ message: "hello" });
-});
+// export const check = asyncHandler(async (req, res) => {
+//   console.log("hello");
+//   res.status(200).json({ message: "hello" });
+// });
 // controler for Send-Otp
 const accountSid = process.env.TWILIO_ACCOUNT_SID
 const authToken = process.env.TWILIO_AUTH_TOKEN
