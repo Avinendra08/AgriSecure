@@ -60,6 +60,16 @@ const farmerSchema = new Schema({
     type: String,
     required: true,
   },
+  otp:{
+    type: String,
+    required: true,
+  },
+
+  otpExpiration:{
+    type: Date,
+    get:(otpExpiration)=> otpExpiration.getTime(),
+    set:(otpExpiration)=> new Date(otpExpiration),
+  },
   gender: {
     type: String,
     enum: ["Male", "Female", "Other"],
